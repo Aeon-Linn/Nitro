@@ -1,1 +1,90 @@
 /* Metro Theme Author: Michael Martin-Smucker */
+body {
+  font-family: "Segoe UI", "Open Sans", sans-serif;
+}
+#panel {
+  background: #f2f2f2;
+  color: #000;
+}
+#panel #brand {
+  display: none;
+}
+#panel nav {
+  left: 0;
+}
+#panel nav ul li {
+  font-size: 17px;
+  height: 40px;
+  text-transform: lowercase;
+  -webkit-transition: background 120ms linear;
+}
+#panel nav ul li:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+#panel nav ul li#addBTN {
+  padding-left: 10px;
+}
+#panel nav ul li span {
+  display: block;
+  float: left;
+  margin-top: 9px;
+}
+#panel nav ul li .icon {
+  display: inline-block;
+  height: 30px;
+  margin: 4px;
+  width: 30px;
+}
+#panel nav ul li .icon.add {
+  background: url(../../images/darksprite.png) no-repeat;
+}
+#panel nav ul li .icon.edit {
+  background: url(../../images/darksprite.png) no-repeat 0 -40px;
+}
+#panel nav ul li .icon.delete {
+  background: url(../../images/darksprite.png) no-repeat 0 -78px;
+  margin: 4px 2px;
+}
+#panel #right ul li#syncBTN img {
+  background: url(../../images/sync_dark.gif) no-repeat 8px 5px;
+}
+#panel #right ul li#syncBTN.active img {
+  background: url(../../images/sync_active_dark.gif) no-repeat 8px 5px;
+}
+#panel #right ul li#syncBTN.running img {
+  background: url(../../images/sync_running_dark.gif) no-repeat 8px 5px;
+}
+#panel #right ul li#logbookBTN img {
+  background: url(../../images/darksprite.png) no-repeat 5px -118px;
+}
+#panel #right ul li#settingsBTN img {
+  background: url(../../images/darksprite.png) no-repeat 5px -158px;
+}
+#panel #right ul li img {
+  height: 30px;
+  width: 30px;
+}
+#panel #right ul li .settings {
+  background: rgba(51, 51, 51, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  box-shadow: 0 1px 19px rgba(0, 0, 0, 0.35), inset 0 0 1px rgba(255, 255, 255, 0.2);
+  margin-left: -185px;
+  top: 50px;
+  width: 300px;
+}
+#panel #right ul li #search {
+  background: #ffffff url(../../images/whitesprite.png) no-repeat 5px -364px;
+  border: 1px solid #ddd;
+  font-size: 13px;
+  line-height: 13px;
+  margin-left: 7px;
+  padding: 4px;
+  padding-left: 23px;
+  position: relative;
+  -webkit-transition: 200ms ease width;
+  width: 100px;
+}
+#panel #right ul li #search:focus {
+  width: 250px;
+}
