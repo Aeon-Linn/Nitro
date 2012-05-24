@@ -88,3 +88,80 @@ body {
 #panel #right ul li #search:focus {
   width: 250px;
 }
+#content #sidebar {
+  border: 0;
+  text-transform: lowercase;
+  top: 40px;
+  width: 250px;
+}
+#content #sidebar h2 {
+  color: #222;
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 25px;
+  margin: 0;
+  padding: 16px 18px 8px 15px;
+}
+#content #sidebar h2 #addListBTN {
+  background: url(../../images/whitesprite.png) no-repeat 4px -413px;
+  border-radius: 50%;
+  height: 8px;
+  padding: 4px;
+  width: 8px;
+}
+#content #sidebar h2 #addListBTN:hover {
+  background: #e2e2e2 url(../../images/whitesprite.png) no-repeat 4px -413px;
+}
+#content #sidebar ul li {
+  color: #888;
+  font-size: 15px;
+  line-height: 30px;
+  padding-left: 35px;
+}
+#content #sidebar ul li.dragHover:not(.selected) {
+  background: #ecf8ff;
+}
+#content #sidebar ul li.selected {
+  background: none;
+  color: #0ad;
+}
+#content #sidebar ul li p {
+  width: 130px;
+}
+#content #sidebar ul li .editIcon {
+  background: url(../../images/whitesprite.png) no-repeat -1px -145px;
+  height: 17px;
+  left: auto;
+  right: 65px;
+  top: 7px;
+  width: 17px;
+}
+#content #sidebar ul li .delete {
+  background: url(../../images/whitesprite.png) no-repeat 0 -120px;
+  height: 16px;
+  left: auto;
+  right: 45px;
+  top: 9px;
+  width: 18px;
+}
+#content #sidebar ul li .edit input {
+  background: #fff;
+  border: 0;
+  margin-left: -5px;
+  margin-right: 5px;
+  outline: 0;
+  padding: 3px 4px;
+  width: 125px;
+}
+#content #sidebar ul li .edit .save {
+  background: url(../../images/whitesprite.png) no-repeat 0 -198px;
+  height: 16px;
+  left: auto;
+  right: 65px;
+  top: 8px;
+  width: 18px;
+}
+#content #sidebar ul li .count {
+  right: 5px;
+  width: 40px;
+}

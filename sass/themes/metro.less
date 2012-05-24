@@ -1,4 +1,10 @@
 /* Metro Theme Author: Michael Martin-Smucker */
+.labeltag (@bgcolor: #666) {
+    background: @bgcolor;
+    &:before {
+        border-right-color: @bgcolor;
+    }
+}
 body {
     font-family: "Segoe UI", "Open Sans", sans-serif;
 }
@@ -102,6 +108,94 @@ body {
                     &:focus {
                         width: 250px;
                     }
+                }
+            }
+        }
+    }
+}
+#content {
+    #sidebar {
+        border: 0;
+        text-transform: lowercase;
+        top: 40px;
+        width: 250px;
+
+        h2 {
+            color: #222;
+            font-size: 25px;
+            font-weight: normal;
+            line-height: 25px;
+            margin: 0;
+            padding: 16px 18px 8px 15px;
+
+            #addListBTN {
+                background: url(../../images/whitesprite.png) no-repeat 4px -413px;
+                border-radius: 50%;
+                height: 8px;
+                padding: 4px;
+                width: 8px;
+
+                &:hover {
+                    background: #e2e2e2 url(../../images/whitesprite.png) no-repeat 4px -413px;
+                }
+            }
+        }
+        ul {
+            li {
+                color: #888;
+                font-size: 15px;
+                line-height: 30px;
+                padding-left: 35px;
+                
+                &.dragHover:not(.selected) {
+                    background: #ecf8ff;
+                }
+                &.selected {
+                    background: none;
+                    color: #0ad;
+                }
+
+                p {
+                    width: 130px;
+                }
+                .editIcon {
+                    background: url(../../images/whitesprite.png) no-repeat -1px -145px;
+                    height: 17px;
+                    left: auto;
+                    right: 65px;
+                    top: 7px;
+                    width: 17px;
+                }
+                .delete {
+                    background: url(../../images/whitesprite.png) no-repeat 0 -120px;
+                    height: 16px;
+                    left: auto;
+                    right: 45px;
+                    top: 9px;
+                    width: 18px;
+                }
+                .edit {
+                    input {
+                        background: #fff;
+                        border: 0;
+                        margin-left: -5px;
+                        margin-right: 5px;
+                        outline: 0;
+                        padding: 3px 4px;
+                        width: 125px;
+                    }
+                    .save {
+                        background: url(../../images/whitesprite.png) no-repeat 0 -198px;
+                        height: 16px;
+                        left: auto;
+                        right: 65px;
+                        top: 8px;
+                        width: 18px;
+                    }
+                }
+                .count {
+                    right: 5px;
+                    width: 40px;
                 }
             }
         }
