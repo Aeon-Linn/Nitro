@@ -242,6 +242,24 @@ body {
                 &:first-child {
                     border-top: 1px solid #eee;
                 }
+                &:before {
+                    background: #eee;
+                    content: "";
+                    height: 100%;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    width: 4px;
+                }
+                &.low:before {
+                    background: #09c;
+                }
+                &.medium:before {
+                    background: #fb4;
+                }
+                &.important:before {
+                    background: #e33;
+                }
                 &.expanded {
                     border-top: 1px solid #eee;
                     padding-bottom: 0;
@@ -261,11 +279,46 @@ body {
                     text-transform: capitalize;
 
                     span {
+                        background: #999;
+                        color: #fff;
                         height: 22px;
                         line-height: 22px;
                         margin-left: 20px;
                         padding: 0 10px;
                         position: relative;
+                        
+                        &:before {
+                            border: 11px solid transparent;
+                            border-right-color: #999;
+                            content: "";
+                            left: -22px;
+                            position: absolute;
+                            top: 0;
+                        }
+                        // Today Label
+                        &.today, &.todayLabel {
+                            .labeltag(#86b);
+                        }
+                        // Priority Tags
+                        &.priority.low {
+                            .labeltag(#0ad);
+                        }
+                        &.priority.medium {
+                            .labeltag(#fb4);
+                        }
+                        &.priority.important {
+                            .labeltag(#e33);
+                        }
+                        // Date Tags
+                        &.date, &.dateLabel {
+                            .labeltag(#0ad);
+                        }
+                        &.date.due, &.dateLabel.due {
+                            .labeltag(#5b2);
+                        }
+                        &.date.overdue, &.dateLabel.overdue {
+                            .labeltag(#e33);
+                        }
                     }
                 }
                 &.selected {

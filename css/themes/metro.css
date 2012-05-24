@@ -207,6 +207,24 @@ body {
 #content #tasks ul li:first-child {
   border-top: 1px solid #eee;
 }
+#content #tasks ul li:before {
+  background: #eee;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 4px;
+}
+#content #tasks ul li.low:before {
+  background: #09c;
+}
+#content #tasks ul li.medium:before {
+  background: #fb4;
+}
+#content #tasks ul li.important:before {
+  background: #e33;
+}
 #content #tasks ul li.expanded {
   border-top: 1px solid #eee;
   padding-bottom: 0;
@@ -225,11 +243,71 @@ body {
   text-transform: capitalize;
 }
 #content #tasks ul li .labels span {
+  background: #999;
+  color: #fff;
   height: 22px;
   line-height: 22px;
   margin-left: 20px;
   padding: 0 10px;
   position: relative;
+}
+#content #tasks ul li .labels span:before {
+  border: 11px solid transparent;
+  border-right-color: #999;
+  content: "";
+  left: -22px;
+  position: absolute;
+  top: 0;
+}
+#content #tasks ul li .labels span.today,
+#content #tasks ul li .labels span.todayLabel {
+  background: #8866bb;
+}
+#content #tasks ul li .labels span.today:before,
+#content #tasks ul li .labels span.todayLabel:before {
+  border-right-color: #8866bb;
+}
+#content #tasks ul li .labels span.priority.low {
+  background: #00aadd;
+}
+#content #tasks ul li .labels span.priority.low:before {
+  border-right-color: #00aadd;
+}
+#content #tasks ul li .labels span.priority.medium {
+  background: #ffbb44;
+}
+#content #tasks ul li .labels span.priority.medium:before {
+  border-right-color: #ffbb44;
+}
+#content #tasks ul li .labels span.priority.important {
+  background: #ee3333;
+}
+#content #tasks ul li .labels span.priority.important:before {
+  border-right-color: #ee3333;
+}
+#content #tasks ul li .labels span.date,
+#content #tasks ul li .labels span.dateLabel {
+  background: #00aadd;
+}
+#content #tasks ul li .labels span.date:before,
+#content #tasks ul li .labels span.dateLabel:before {
+  border-right-color: #00aadd;
+}
+#content #tasks ul li .labels span.date.due,
+#content #tasks ul li .labels span.dateLabel.due {
+  background: #55bb22;
+}
+#content #tasks ul li .labels span.date.due:before,
+#content #tasks ul li .labels span.dateLabel.due:before {
+  border-right-color: #55bb22;
+}
+#content #tasks ul li .labels span.date.overdue,
+#content #tasks ul li .labels span.dateLabel.overdue {
+  background: #ee3333;
+}
+#content #tasks ul li .labels span.date.overdue:before,
+#content #tasks ul li .labels span.dateLabel.overdue:before {
+  border-right-color: #ee3333;
 }
 #content #tasks ul li.selected {
   background: #ccf2ff;
