@@ -261,6 +261,14 @@ body {
   position: absolute;
   top: 0;
 }
+#content #tasks ul li .labels span:after {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  content: "";
+  left: -2px;
+  position: absolute;
+  top: 9px;
+}
 #content #tasks ul li .labels span.today,
 #content #tasks ul li .labels span.todayLabel {
   background: #8866bb;
