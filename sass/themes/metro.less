@@ -1,4 +1,12 @@
 /* Metro Theme Author: Michael Martin-Smucker */
+
+// Consistent colors for the Metro theme
+@red: #e33;
+@orange: #fb4;
+@green: #5b2;
+@blue: #0ad;
+@purple: #86b;
+
 .labeltag (@bgcolor: #666) {
     background: @bgcolor;
     &:before {
@@ -152,7 +160,7 @@ body {
                 }
                 &.selected {
                     background: none;
-                    color: #0ad;
+                    color: @blue;
                 }
 
                 p {
@@ -254,13 +262,13 @@ body {
                     width: 4px;
                 }
                 &.low:before {
-                    background: #09c;
+                    background: @blue;
                 }
                 &.medium:before {
-                    background: #fb4;
+                    background: @orange;
                 }
                 &.important:before {
-                    background: #e33;
+                    background: @red;
                 }
                 &.expanded {
                     border-top: 1px solid #eee;
@@ -307,27 +315,27 @@ body {
                         }
                         // Today Label
                         &.today, &.todayLabel {
-                            .labeltag(#86b);
+                            .labeltag(@purple);
                         }
                         // Priority Tags
                         &.priority.low {
-                            .labeltag(#0ad);
+                            .labeltag(@blue);
                         }
                         &.priority.medium {
-                            .labeltag(#fb4);
+                            .labeltag(@orange);
                         }
                         &.priority.important {
-                            .labeltag(#e33);
+                            .labeltag(@red);
                         }
                         // Date Tags
                         &.date, &.dateLabel {
-                            .labeltag(#0ad);
+                            .labeltag(@blue);
                         }
                         &.date.due, &.dateLabel.due {
-                            .labeltag(#5b2);
+                            .labeltag(@green);
                         }
                         &.date.overdue, &.dateLabel.overdue {
-                            .labeltag(#e33);
+                            .labeltag(@red);
                         }
                     }
                 }
