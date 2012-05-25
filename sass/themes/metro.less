@@ -7,6 +7,16 @@
 @blue: #0ad;
 @purple: #86b;
 
+.panelbtn (@color, @offset) {
+    span {
+        color: @color;
+
+        &.icon {
+            background: url(../../images/darksprite.png) no-repeat 0 @offset;
+        }
+    }
+}
+
 .labeltag (@bgcolor: #666) {
     background: @bgcolor;
     &:before {
@@ -19,6 +29,7 @@ body {
 #panel {
     background: #f2f2f2;
     color: #000;
+    height: 55px; 
 
     #brand {
         display: none;
@@ -27,39 +38,32 @@ body {
         left: 0;
         ul {
             li {
-                font-size: 17px;
-                height: 40px;
+                font-size: 15px;
+                line-height: 20px;
+                padding: 0 10px 5px;
                 text-transform: lowercase;
                 -webkit-transition: background 120ms linear;
 
                 &:hover {
-                    background: rgba(0,0,0,0.3);
+                    background: #fff;
                 }
-                &#addBTN {
-                    padding-left: 10px;
-                }
-
                 span {
                     display: block;
-                    float: left;
-                    margin-top: 9px;
+                    
+                    &.icon {
+                        height: 30px;
+                        margin: 0 auto;
+                        width: 30px;
+                    }
                 }
-                .icon {
-                    display: inline-block;
-                    height: 30px;
-                    margin: 4px;
-                    width: 30px;
-
-                    &.add {
-                        background: url(../../images/darksprite.png) no-repeat;
-                    }
-                    &.edit {
-                        background: url(../../images/darksprite.png) no-repeat 0 -40px;
-                    }
-                    &.delete {
-                        background: url(../../images/darksprite.png) no-repeat 0 -78px;
-                        margin: 4px 2px;
-                    }
+                &#addBTN {
+                    .panelbtn(@green, 0);
+                }
+                &#editBTN {
+                    .panelbtn(@blue, -40px);
+                }
+                &#deleteBTN {
+                    .panelbtn(@red, -78px);
                 }
             }
         }
@@ -125,7 +129,7 @@ body {
     #sidebar {
         border: 0;
         text-transform: lowercase;
-        top: 40px;
+        top: 55px;
         width: 250px;
 
         h2 {
@@ -211,7 +215,7 @@ body {
     #tasks {
         left: 250px;
         padding: 0 15px;
-        top: 40px;
+        top: 55px;
 
         .explanation {
             background: rgba(255,255,255,0.95);

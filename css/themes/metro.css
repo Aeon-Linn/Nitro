@@ -5,6 +5,7 @@ body {
 #panel {
   background: #f2f2f2;
   color: #000;
+  height: 55px;
 }
 #panel #brand {
   display: none;
@@ -13,37 +14,40 @@ body {
   left: 0;
 }
 #panel nav ul li {
-  font-size: 17px;
-  height: 40px;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 0 10px 5px;
   text-transform: lowercase;
   -webkit-transition: background 120ms linear;
 }
 #panel nav ul li:hover {
-  background: rgba(0, 0, 0, 0.3);
-}
-#panel nav ul li#addBTN {
-  padding-left: 10px;
+  background: #fff;
 }
 #panel nav ul li span {
   display: block;
-  float: left;
-  margin-top: 9px;
 }
-#panel nav ul li .icon {
-  display: inline-block;
+#panel nav ul li span.icon {
   height: 30px;
-  margin: 4px;
+  margin: 0 auto;
   width: 30px;
 }
-#panel nav ul li .icon.add {
-  background: url(../../images/darksprite.png) no-repeat;
+#panel nav ul li#addBTN span {
+  color: #55bb22;
 }
-#panel nav ul li .icon.edit {
+#panel nav ul li#addBTN span.icon {
+  background: url(../../images/darksprite.png) no-repeat 0 0;
+}
+#panel nav ul li#editBTN span {
+  color: #00aadd;
+}
+#panel nav ul li#editBTN span.icon {
   background: url(../../images/darksprite.png) no-repeat 0 -40px;
 }
-#panel nav ul li .icon.delete {
+#panel nav ul li#deleteBTN span {
+  color: #ee3333;
+}
+#panel nav ul li#deleteBTN span.icon {
   background: url(../../images/darksprite.png) no-repeat 0 -78px;
-  margin: 4px 2px;
 }
 #panel #right ul li#syncBTN img {
   background: url(../../images/sync_dark.gif) no-repeat 8px 5px;
@@ -91,7 +95,7 @@ body {
 #content #sidebar {
   border: 0;
   text-transform: lowercase;
-  top: 40px;
+  top: 55px;
   width: 250px;
 }
 #content #sidebar h2 {
@@ -168,7 +172,7 @@ body {
 #content #tasks {
   left: 250px;
   padding: 0 15px;
-  top: 40px;
+  top: 55px;
 }
 #content #tasks .explanation {
   background: rgba(255, 255, 255, 0.95);
