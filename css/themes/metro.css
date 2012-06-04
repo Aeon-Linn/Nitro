@@ -49,6 +49,9 @@ body {
 #panel nav ul li#deleteBTN span.icon {
   background: url(../../images/darksprite.png) no-repeat 0 -78px;
 }
+#panel #right {
+  top: 7px;
+}
 #panel #right ul li#syncBTN img {
   background: url(../../images/sync_dark.gif) no-repeat 8px 5px;
 }
