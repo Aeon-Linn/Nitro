@@ -364,3 +364,10 @@ body {
   opacity: 0.6;
   top: -1px;
 }
+#search::-webkit-input-placeholder {
+  color: #555;
+  -webkit-transition: 200ms ease color;
+  font-size: 13px;
+  line-height: 13px;
+  padding: 2px;
+}
