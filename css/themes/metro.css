@@ -113,6 +113,7 @@ body {
   background: url(../../images/whitesprite.png) no-repeat 4px -413px;
   border-radius: 50%;
   height: 8px;
+  margin-top: 5px;
   padding: 4px;
   width: 8px;
 }
