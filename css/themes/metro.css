@@ -98,6 +98,23 @@ body {
 #panel #right ul li#settingsBTN img {
   background: url(./metro/settings.png) no-repeat 0 0;
 }
+#panel #right ul li#settingsBTN ul {
+  background: rgba(0, 0, 0, 0.85);
+  left: -10px;
+}
+#panel #right ul li#settingsBTN ul:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.85);
+  border-style: solid;
+  border-width: 10px;
+  content: "";
+  left: 10px;
+  position: absolute;
+  top: -20px;
+}
+#panel #right ul li#settingsBTN ul li:hover {
+  background: #000;
+}
 #panel #right ul li img {
   height: 20px;
   padding: 0;
