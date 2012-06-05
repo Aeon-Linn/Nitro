@@ -29,7 +29,7 @@ body {
 #panel {
     background: #f2f2f2;
     color: #000;
-    height: 55px; 
+    height: 60px;
 
     #brand {
         display: none;
@@ -84,34 +84,38 @@ body {
         }
     }
     #right {
-        top: 7px;
+        top: 17px;
 
         ul {
             li {
+                margin: 0 4px;
+
                 &#syncBTN {
                     img {
-                        background: url(../../images/sync_dark.gif) no-repeat 8px 5px;
+                        background: url(./metro/sync.png) no-repeat 0 0;
+                        width: 24px;
                     }
                     &.active img {
-                        background: url(../../images/sync_active_dark.gif) no-repeat 8px 5px;
+                        background: url(./metro/sync.png) no-repeat 0 -20px;
                     }
                     &.running img {
-                        background: url(../../images/sync_running_dark.gif) no-repeat 8px 5px;
+                        background: url(./metro/sync.png) no-repeat 0 -40px;
                     }
                 }
                 &#logbookBTN {
                     img {
-                        background: url(../../images/darksprite.png) no-repeat 5px -118px;
+                        background: url(./metro/logbook.png) no-repeat 0 0;
                     }
                 }
                 &#settingsBTN {
                     img {
-                        background: url(../../images/darksprite.png) no-repeat 5px -158px;
+                        background: url(./metro/settings.png) no-repeat 0 0;
                     }
                 }
                 img {
-                    height: 30px;
-                    width: 30px;
+                    height: 20px;
+                    padding: 0;
+                    width: 20px;
                 }
                 .settings {
                     background: rgba(51,51,51,0.95);
@@ -146,7 +150,7 @@ body {
     #sidebar {
         border: 0;
         text-transform: lowercase;
-        top: 55px;
+        top: 60px;
         width: 250px;
 
         h2 {
@@ -233,7 +237,7 @@ body {
     #tasks {
         left: 250px;
         padding: 0 15px;
-        top: 55px;
+        top: 60px;
 
         .explanation {
             background: rgba(255,255,255,0.95);

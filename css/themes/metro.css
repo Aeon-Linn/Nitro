@@ -5,7 +5,7 @@ body {
 #panel {
   background: #f2f2f2;
   color: #000;
-  height: 55px;
+  height: 60px;
 }
 #panel #brand {
   display: none;
@@ -66,26 +66,31 @@ body {
   background-position: 0 -48px;
 }
 #panel #right {
-  top: 7px;
+  top: 17px;
+}
+#panel #right ul li {
+  margin: 0 4px;
 }
 #panel #right ul li#syncBTN img {
-  background: url(../../images/sync_dark.gif) no-repeat 8px 5px;
+  background: url(./metro/sync.png) no-repeat 0 0;
+  width: 24px;
 }
 #panel #right ul li#syncBTN.active img {
-  background: url(../../images/sync_active_dark.gif) no-repeat 8px 5px;
+  background: url(./metro/sync.png) no-repeat 0 -20px;
 }
 #panel #right ul li#syncBTN.running img {
-  background: url(../../images/sync_running_dark.gif) no-repeat 8px 5px;
+  background: url(./metro/sync.png) no-repeat 0 -40px;
 }
 #panel #right ul li#logbookBTN img {
-  background: url(../../images/darksprite.png) no-repeat 5px -118px;
+  background: url(./metro/logbook.png) no-repeat 0 0;
 }
 #panel #right ul li#settingsBTN img {
-  background: url(../../images/darksprite.png) no-repeat 5px -158px;
+  background: url(./metro/settings.png) no-repeat 0 0;
 }
 #panel #right ul li img {
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  padding: 0;
+  width: 20px;
 }
 #panel #right ul li .settings {
   background: rgba(51, 51, 51, 0.95);
@@ -114,7 +119,7 @@ body {
 #content #sidebar {
   border: 0;
   text-transform: lowercase;
-  top: 55px;
+  top: 60px;
   width: 250px;
 }
 #content #sidebar h2 {
@@ -192,7 +197,7 @@ body {
 #content #tasks {
   left: 250px;
   padding: 0 15px;
-  top: 55px;
+  top: 60px;
 }
 #content #tasks .explanation {
   background: rgba(255, 255, 255, 0.95);
