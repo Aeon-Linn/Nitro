@@ -313,7 +313,9 @@ body {
                 border-right: 1px solid #eee;
                 padding: 4px 0 4px 4px;
 
-                &:first-child {
+                // Really, we want to select the first li that is :not(.hidden)
+                // CSS4 selectors will make this possible, but this is good enough for now
+                &:first-child, &.hidden:first-child + li {
                     border-top: 1px solid #eee;
                 }
                 &:before {
