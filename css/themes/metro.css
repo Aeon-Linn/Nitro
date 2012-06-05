@@ -25,29 +25,45 @@ body {
 }
 #panel nav ul li span {
   display: block;
+  text-align: center;
 }
 #panel nav ul li span.icon {
-  height: 30px;
+  background-position: 0 -6px;
+  background-repeat: no-repeat;
+  height: 36px;
   margin: 0 auto;
-  width: 30px;
+  width: 42px;
 }
 #panel nav ul li#addBTN span {
   color: #55bb22;
 }
 #panel nav ul li#addBTN span.icon {
-  background: url(../../images/darksprite.png) no-repeat 0 0;
+  background-image: url('./metro/add.png');
 }
 #panel nav ul li#editBTN span {
   color: #00aadd;
 }
 #panel nav ul li#editBTN span.icon {
-  background: url(../../images/darksprite.png) no-repeat 0 -40px;
+  background-image: url('./metro/edit.png');
 }
 #panel nav ul li#deleteBTN span {
   color: #ee3333;
 }
 #panel nav ul li#deleteBTN span.icon {
-  background: url(../../images/darksprite.png) no-repeat 0 -78px;
+  background-image: url('./metro/cancel.png');
+}
+#panel nav ul li.disabled {
+  opacity: .2;
+}
+#panel nav ul li.disabled#addBTN span,
+#panel nav ul li.disabled#editBTN span,
+#panel nav ul li.disabled#deleteBTN span {
+  color: #000;
+}
+#panel nav ul li.disabled#addBTN span.icon,
+#panel nav ul li.disabled#editBTN span.icon,
+#panel nav ul li.disabled#deleteBTN span.icon {
+  background-position: 0 -48px;
 }
 #panel #right {
   top: 7px;

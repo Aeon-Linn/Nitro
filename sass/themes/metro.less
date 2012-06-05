@@ -7,12 +7,12 @@
 @blue: #0ad;
 @purple: #86b;
 
-.panelbtn (@color, @offset) {
+.panelbtn (@color, @img) {
     span {
         color: @color;
 
         &.icon {
-            background: url(../../images/darksprite.png) no-repeat 0 @offset;
+            background-image: url(@img);
         }
     }
 }
@@ -49,21 +49,36 @@ body {
                 }
                 span {
                     display: block;
+                    text-align: center;
                     
                     &.icon {
-                        height: 30px;
+                        background-position: 0 -6px;
+                        background-repeat: no-repeat;
+                        height: 36px;
                         margin: 0 auto;
-                        width: 30px;
+                        width: 42px;
                     }
                 }
                 &#addBTN {
-                    .panelbtn(@green, 0);
+                    .panelbtn(@green, './metro/add.png');
                 }
                 &#editBTN {
-                    .panelbtn(@blue, -40px);
+                    .panelbtn(@blue, './metro/edit.png');
                 }
                 &#deleteBTN {
-                    .panelbtn(@red, -78px);
+                    .panelbtn(@red, './metro/cancel.png');
+                }
+                &.disabled {
+                    opacity: .2;
+
+                    &#addBTN, &#editBTN, &#deleteBTN {
+                        span {
+                            color: #000;
+                            &.icon {
+                                background-position: 0 -48px;
+                            }
+                        }
+                    }
                 }
             }
         }
