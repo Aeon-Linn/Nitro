@@ -344,7 +344,7 @@ body {
   border-right-color: #ee3333;
 }
 #content #tasks ul li.selected {
-  background: #ccf2ff;
+  background: #ddf7ff;
 }
 #content #tasks ul li.logged {
   background: #fff;
