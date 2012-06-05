@@ -186,21 +186,23 @@ body {
 #content #sidebar ul li p {
   width: 130px;
 }
-#content #sidebar ul li .editIcon {
-  background: url(../../images/whitesprite.png) no-repeat -1px -145px;
-  height: 17px;
-  left: auto;
-  right: 65px;
-  top: 7px;
-  width: 17px;
-}
-#content #sidebar ul li .delete {
-  background: url(../../images/whitesprite.png) no-repeat 0 -120px;
+#content #sidebar ul li .editIcon,
+#content #sidebar ul li .delete,
+#content #sidebar ul li .edit .save {
+  background: url(../images/glyphicons-halflings.png) no-repeat 0 0;
   height: 16px;
   left: auto;
+  width: 16px;
+}
+#content #sidebar ul li .editIcon {
+  background-position: 0 -71px;
+  right: 65px;
+  top: 7px;
+}
+#content #sidebar ul li .delete {
+  background-position: -313px 0;
   right: 45px;
   top: 9px;
-  width: 18px;
 }
 #content #sidebar ul li .edit input {
   background: #fff;
@@ -212,12 +214,9 @@ body {
   width: 125px;
 }
 #content #sidebar ul li .edit .save {
-  background: url(../../images/whitesprite.png) no-repeat 0 -198px;
-  height: 16px;
-  left: auto;
+  background-position: -288px 0;
   right: 65px;
   top: 8px;
-  width: 18px;
 }
 #content #sidebar ul li .count {
   right: 5px;
