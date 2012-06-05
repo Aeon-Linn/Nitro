@@ -90,6 +90,22 @@ body {
             li {
                 margin: 0 4px;
 
+                &:not(:last-child) {
+                    img {
+                        opacity: 0.65;
+                        -webkit-transition: opacity 200ms;
+                    }
+
+                    &:hover {
+                        background: none;
+
+                        img {
+                            opacity: 1;
+                            -webkit-transition: opacity 100ms;
+                        }
+                    }
+                }
+
                 &#syncBTN {
                     img {
                         background: url(./metro/sync.png) no-repeat 0 0;

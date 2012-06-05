@@ -71,6 +71,17 @@ body {
 #panel #right ul li {
   margin: 0 4px;
 }
+#panel #right ul li:not(:last-child) img {
+  opacity: 0.65;
+  -webkit-transition: opacity 200ms;
+}
+#panel #right ul li:not(:last-child):hover {
+  background: none;
+}
+#panel #right ul li:not(:last-child):hover img {
+  opacity: 1;
+  -webkit-transition: opacity 100ms;
+}
 #panel #right ul li#syncBTN img {
   background: url(./metro/sync.png) no-repeat 0 0;
   width: 24px;
