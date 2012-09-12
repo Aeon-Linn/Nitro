@@ -17,13 +17,10 @@ html, button, input, select, textarea { font-family: "Segoe UI", "Open Sans", sa
 #sidebar ul li.selected { background: none; border: 0; color: #00aadd; }
 #sidebar ul li.selected .edit, #sidebar ul li.selected .delete { opacity: 0.5; }
 #sidebar ul li.selected .edit:hover, #sidebar ul li.selected .delete:hover { opacity: 1; }
-#sidebar ul li.selected .edit { background-position: 0 -103px; opacity: 0.5; }
-#sidebar ul li.selected .edit.open { background-position: 0 179px; }
-#sidebar ul li.selected .delete { background-position: 1px -81px; opacity: 0.5; }
+#sidebar ul li.selected .edit { background-position: 0 -58px; }
+#sidebar ul li.selected .edit.open { background-position: 0 -72px; }
+#sidebar ul li.selected .delete { background-position: 0 -42px; }
 #sidebar ul li .edit, #sidebar ul li .delete { margin-top: 5px; }
-#sidebar ul li .edit { background-position: 0 -103px; }
-#sidebar ul li .edit.open { background-position: 0 179px; }
-#sidebar ul li .delete { background-position: 1px -81px; }
 #sidebar #lists { overflow: visible; }
 #sidebar .listAddBTN { border: 1px solid transparent; color: #aaa; cursor: text; font-style: italic; font-weight: normal; line-height: 16px; margin: 3px 5px 0 30px; padding: 3px 4px; }
 #sidebar .listAddBTN:hover { border-color: #ddd; color: #888; }

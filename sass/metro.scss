@@ -112,32 +112,19 @@ html, button, input, select, textarea {
                     }
                 }
                 .edit {
-                    background-position: 0 -103px;
-                    opacity: 0.5;
+                    background-position: 0 -58px;
 
                     &.open {
-				        background-position: 0 179px;
+                        background-position: 0 -72px;
                     }
                 }
                 .delete {
-                    background-position: 1px -81px;
-                    opacity: 0.5;
+                    background-position: 0 -42px;
                 }
             }
             .edit, .delete {
                 // Metro theme doesn't need as much of a margin above icons
                 margin-top: 5px;
-            }
-            // Override positioning from style.scss, move icons down 2px
-            .edit {
-                background-position: 0 -103px;
-
-                &.open {
-				    background-position: 0 179px;
-                }
-            }
-            .delete {
-                background-position: 1px -81px;
             }
         }
     }
